@@ -1,38 +1,414 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #152336;
+	color: white;
+	height: 100px;
+	font-size: 60px;
+	font-family: f1;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+}
+
+.top h1 {
+	font-size: 70px;
+	font-family: 'Courier New', Courier, monospace
+}
+
+header {
+	height: 50px;
+	background-color:#3e4145;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	margin-top: 100px;
+}
+
+header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding-top: 12px;
+}
+
+header a {
+	font-family: f2;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	margin: 50px;
+	text-decoration: none;
+}
+
+header :hover {
+	color: black;
+}
+
+.logo1 {
+	position: absolute;
+	top: 20px;
+	left: 120px;
+
+}
+
+.logo1 img {
+	height: 60px;
+	width: 100px;
+}
+
+.logo2 {
+	position: absolute;
+	top: 17px;
+	right: 120px;
+}
+
+.logo2 img {
+	height: 70px;
+	width: 100px;
+}
+
+
+.welBG img {
+	text-align: center;
+	color: aliceblue;
+	font-family: cursive;
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	overflow: hidden;
+}
+
+
+.poolBG {
+	background-image: url(https://wallpaperaccess.com/full/1108057.jpg);
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.pool {
+	padding-bottom: 150px;
+}
+
+.swimm p {
+	width: 700px;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 50px;
+	font-style: italic;
+}
+
+.swimm {
+	margin-top: 260px;
+	background-color: rgba(225, 225, 225, 0.6);
+	height: 300px;
+	width: 800px;
+	text-align: center;
+}
+
+.swimm h1 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-top: 10px;
+}
+
+
+.swim-img {
+	background: #3e4145;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.poqr-nkar {
+	margin: 30px;
+	height: 400px;
+	width: 500px;
+	object-fit: contain;
+	border-style: groove;
+	border-color: #282c34;
+}
+
+.poqr-nkar img {
+	height: 100%;
+	width: 100%;
+}
+
+
+.pool {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.gymBG {
+	background-image: url(https://www.wallpapertip.com/wmimgs/191-1913940_weight-lifting-hd.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 900px;
+}
+
+.gym {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gym-img img {
+	margin-top: 200px;
+	width: 100%;
+}
+
+.trinajor {
+	margin-top: 270px;
+	background-color: rgba(225, 225, 225, 0.6);
+	height: 300px;
+	width: 800px;
+	text-align: center;
+}
+
+.trinajor2 {
+	width: 100%;
+}
+
+.trinajor h1 {
+	padding-top: 40px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trinajor p {
+	width: 700px;
+	margin-left: 50px;
+	font-size: 23px;
+	font-style: italic;
+}
+
+.fitBG {
+	background-color: black;
+	height:1700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fitText {
+	width: 900px;
+	text-align: center;
+	font-size: 20px;
+	color: aliceblue;
+}
+
+.fitText h1 {
+	color: red;
+}
+
+.minpic {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.minpic img {
+	width: 379.2px;
+	height: 100%;
+}
+
+.fitPic {
+	display: flex;
+	justify-content: center;
+}
+
+.fitPic img {
+	height: 300px;
+	width: 400px;
+}
+
+.sale {
+	width: 47.3%;
+	background: #123132;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-right: 200px;
+}
+
+.sale p{
+	font-family: f1;
+	text-align: center;
+    font-size: 30px;
+    width: 90%;
+    margin:auto;
+
+}
+
+.sale button{
+	margin-bottom:190px ;
+	padding:15px 55px;
+	background: white;
+	color:#123132 ;
+	border: none;
+
+}
+
+.sale button:hover{
+	background: #006262;
+	color: white;
+	cursor: pointer;
+}
+
+.H1_2{
+	margin-top: 50px;
+	color: #e9810a;
+}
+
+.fitText button{
+	padding: 10px 30px;
+	margin-top: 20px;
+	background-color: #ff0000;
+}
+
+.fitText button:hover{
+	background-color: #e9810a;
+	cursor: pointer;
+}
+
+.spaBg{
+	background-image: url(https://dok4pfotcdst1.cloudfront.net/crystalgolfresort.com-4150340826/cms/cache/v2/5f57e9b3debc2.jpg/1920x1080/fit/80/63253c1723ab2af4390f6ff93a0808eb.jpg);
+	height: 1000px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+.tb{
+	margin-top: 300px;
+}
+.priceListBg{
+	background-color: #123132;
+	height: 1000px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.spa_list{
+	margin-top: 270px;
+	background-color: rgba(225, 225, 225, 0.6);
+	height: auto;
+	width: auto;
+	/* text-align: center; */
+	padding: 50px;
+}
+
+.spa_list ul{
+	list-style: none;
+}
+
+.spa_list h1{
+	text-align: center;
+	color: #23455e;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.spa_list p{
+	font-style: italic;
+	font-size: 18px;
+}
+
+.spa_list button{
+	background-color: #8d9395;
+	border: none;
+	cursor: pointer;
+	padding: 5px 8px;
+    margin-left: 50px;	
+	margin-bottom: 20px;
+}
+
+.spa_list button:hover{
+	background-color: #135a6e;
+}
+.spa_list2 img{
+	height: 300px;
+	width: 350px;
+	margin-top: 30px;
+}
+
+.spa_list2{
+	margin-top: 270px;
+	background-color: rgba(225, 225, 225, 0.6);
+	height: auto;
+	width:600px;
+	padding: 50px;
+}
+
+.spa_list2 p{
+	font-style: italic;
+}
+.more{
+	text-decoration: none;
+	color: rgb(90, 93, 96);
+	font-style: italic;
+}
+
+.more:hover{
+	color: #242527;
 }
