@@ -16,9 +16,9 @@ function SpaInfo() {
             className="spaBg">
             <div className="gym">
                 <div className="spa_list2">
-                    <h1>Spa Price List</h1>
+                    <h1>About {spaInformation.name} massage</h1>
                     <br />
-                    <p>{spaInformation.description}</p>
+                    <p>{spaInformation.more}</p>
                     <img src={spaInformation.photo}/>
 
                 </div>

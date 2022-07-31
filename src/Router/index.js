@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Header from "../Components/Header"
+import Contact from "../Pages/Contact"
 import Fitness from "../Pages/Fitness"
 import Gym from "../Pages/Gym"
 import Home from "../Pages/Home"
@@ -23,6 +24,7 @@ function Router() {
                         <Route path="/priceList" element={<PriceList/>}/>
                         <Route path="/spa" element={<Spa/>}/>
                         <Route path="/spaMoreInfo/:id" element={<SpaInfo/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>
