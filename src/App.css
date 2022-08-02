@@ -530,4 +530,14 @@ header :hover {
 .profileBG{
 	background-color: #282c34;
 	height: 900px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	overflow: hidden;
+}
+
+.profile{
+	margin-top: 200px;
+	text-align: center;
+	color: white;
 }

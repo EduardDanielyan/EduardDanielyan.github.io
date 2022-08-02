@@ -1,6 +1,6 @@
 import axios from "axios";
 import { takeEvery, put } from 'redux-saga/effects'
-import {  setProcedure, setSpa } from "./Gym/action";
+import { setLogin, setProcedure, setSpa } from "./Gym/action";
 import Swal from "sweetalert2";
 
 const Axios = axios.create({
@@ -20,8 +20,8 @@ function* moreSpa({ id }) {
     yield put(setProcedure(data))
 }
 
-function* signup({data}) {
-   yield Axios.post("http://localhost:4000/registration", { data: data })
+function* signup({ data }) {
+    yield Axios.post("http://localhost:4000/registration", { data: data })
     console.log(data);
 }
 
@@ -41,9 +41,17 @@ function* login({ data, navigate }) {
         navigate('/profile')
     }
 }
+
+function* profile(){
+   let {data} = yield Axios.post("http://localhost:4000/profile")
+   console.log(data);
+   yield put(setLogin(data.user))
+}
+
 export function* rootSaga() {
     yield takeEvery('showSpa', spa)
     yield takeEvery('showId', moreSpa)
-    yield takeEvery('register' , signup)
-    yield takeEvery('log' , login)
+    yield takeEvery('register', signup)
+    yield takeEvery('log', login)
+    yield takeEvery('userInfo' , profile)
 }
