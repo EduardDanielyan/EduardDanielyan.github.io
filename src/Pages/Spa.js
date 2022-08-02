@@ -21,7 +21,7 @@ function Spa() {
                     {
                         spa.map((i,id) => {
                             return <li key={id}>
-                                <p>{i.name} _____{i.description}_____{i.price} AMD</p> 
+                                <p>{i.name} _____{i.description}_____{i.price} AMD</p>
                                 <Link 
                                 className="more"
                                 to={'/spaMoreInfo/' + i.id}>More</Link>   

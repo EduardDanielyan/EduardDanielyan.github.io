@@ -1,5 +1,5 @@
 import { logState } from "./state"
-import { SET_PRICE_LIST, SET_SPA, SET_SPA_INFO } from "./types"
+import { SET_LOGIN_DATA, SET_PRICE_LIST, SET_SPA, SET_SPA_INFO } from "./types"
 
 export const logReducer = (state = logState, option) => {
     switch (option.type) {
@@ -11,6 +11,9 @@ export const logReducer = (state = logState, option) => {
             break  
         case SET_SPA_INFO:
             state.spaInformation = option.payload
+            break    
+        case SET_LOGIN_DATA:
+            state.login = option.payload
             break    
         default:
             break

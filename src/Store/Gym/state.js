@@ -3,6 +3,8 @@ export const logState = {
     
     spa: [],
 
-    spaInformation: {}
+    spaInformation: {} ,
+
+    login: {}
 
 }
