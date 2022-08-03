@@ -27,7 +27,6 @@ function Header() {
                         <li><Link to="/gym">Gym</Link></li>
                         <li><Link to="/fitness">Group Trainings</Link></li>
                         <li><Link to="/spa">SPA</Link></li>
-                        <li><Link to="/priceList">Price List</Link></li>
                         <li><Link to="/contact">Contact us</Link></li>
                         <li><Link to="/signup">Sign Up</Link></li>
                     </ul>

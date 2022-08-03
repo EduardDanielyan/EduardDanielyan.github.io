@@ -1,4 +1,4 @@
-import { SET_LOGIN_DATA, SET_PRICE_LIST, SET_SPA, SET_SPA_INFO } from "./types";
+import { CHECK_USER, SET_LOGIN_DATA, SET_PRICE_LIST, SET_SPA, SET_SPA_INFO } from "./types";
 
 export function setSpa(data) {
     return {
@@ -24,6 +24,13 @@ export function setProcedure(data) {
 export function setLogin(data) {
     return {
         type: SET_LOGIN_DATA,
-        payload:data
+        payload: data
+    }
+}
+
+export function checkUser(data) {
+    return {
+        type: CHECK_USER,
+        payload: data
     }
 }

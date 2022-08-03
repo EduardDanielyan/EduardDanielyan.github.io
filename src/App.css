@@ -539,5 +539,41 @@ header :hover {
 .profile{
 	margin-top: 200px;
 	text-align: center;
+	/* padding-left: 15px; */
 	color: white;
+}
+
+.profile button{
+	background-color: #000103;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	/* margin-right: 50px; */
+}
+
+.profile button:hover{
+	background-color: gray;
+	color: #000103;
+}
+
+.minimenu{
+	/* border: 2px solid red; */
+	height: 300px;
+	width: 100%;
+    text-align: center;
+	/* margin-right: 50px; */
+}
+
+.minimenu ul{
+	list-style: none;
+}
+
+.minimenu a{
+	text-decoration: none;
+	color: rgb(195, 241, 9);
+	margin-right: 20px;
+}
+
+.minimenu a:hover{
+	color: #000000;
 }

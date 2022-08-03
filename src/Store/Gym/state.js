@@ -1,10 +1,12 @@
 export const logState = {
     priceList: [],
-    
+
     spa: [],
 
-    spaInformation: {} ,
+    spaInformation: {},
 
-    login: {}
+    login: {},
+
+    auth: false
 
 }

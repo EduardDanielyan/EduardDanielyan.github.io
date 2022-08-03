@@ -1,7 +1,8 @@
 import axios from "axios";
 import { takeEvery, put } from 'redux-saga/effects'
-import { setLogin, setProcedure, setSpa } from "./Gym/action";
+import { checkUser, setLogin, setProcedure, setSpa } from "./Gym/action";
 import Swal from "sweetalert2";
+import UserChek from "../Pages/userChack";
 
 const Axios = axios.create({
     withCredentials: true
@@ -37,21 +38,46 @@ function* login({ data, navigate }) {
         })
     }
     else {
-        // yield put(checkUser(true))
+        yield put(checkUser(true))
         navigate('/profile')
     }
 }
 
-function* profile(){
-   let {data} = yield Axios.post("http://localhost:4000/profile")
-   console.log(data);
-   yield put(setLogin(data.user))
+function* profile() {
+    let { data } = yield Axios.post("http://localhost:4000/profile")
+    console.log(data);
+    yield put(setLogin(data.user))
 }
+
+
+// function* logOUT({ navigate }) {
+//     let logOut = yield Axios.post("http://localhost:4000/logout")
+//     if (logOut) {
+//         yield put(checkUser(false))
+//         console.log(logOut);
+//         navigate('/signin')
+//     }
+
+// }
+
+function* usercheck({path,navigate}) {
+    let {data} = yield Axios.post("http://localhost:4000/userCheck")
+    console.log(data);
+    yield put(checkUser(data))
+    if(data){
+        navigate(path)
+    }else{
+        navigate('/signin')
+    }
+}
+
 
 export function* rootSaga() {
     yield takeEvery('showSpa', spa)
     yield takeEvery('showId', moreSpa)
     yield takeEvery('register', signup)
     yield takeEvery('log', login)
-    yield takeEvery('userInfo' , profile)
+    yield takeEvery('userInfo', profile)
+    // yield takeEvery('out', logOUT)
+    yield takeEvery('checkUser',usercheck)
 }
