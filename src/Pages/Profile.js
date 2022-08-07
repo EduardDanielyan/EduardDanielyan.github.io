@@ -8,7 +8,7 @@ function Profile() {
     const navigate = useNavigate()
     console.log(login);
     useEffect(() => {
-        dispatch({ type: "userInfo" })
+        dispatch({ type: "userInfo" ,navigate})
     }, [])
     return (
         <div
@@ -20,13 +20,13 @@ function Profile() {
                 <h4>{login.email}</h4>
                 <div 
                 className="minimenu">
-                <ul>
-                    <li><Link to='/pricelist'>-You can see price list here-</Link></li>
-                </ul>
+                
+                <Link to='/pricelist'>-You can see price list here-</Link>  
+                  
                 </div>
                 <button
                     onClick={() => {
-                        {navigate('/signin')}
+                        navigate('/signin')
                     }}>Log Out</button>
             
             </div>

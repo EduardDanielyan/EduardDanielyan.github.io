@@ -1,6 +1,7 @@
-import { Link, Outlet } from "react-router-dom"
+import { Link, Outlet, useNavigate } from "react-router-dom"
 
 function Header() {
+    const navigate = useNavigate()
     return (
         <div className="panel">
             <div className="top">
@@ -29,6 +30,14 @@ function Header() {
                         <li><Link to="/spa">SPA</Link></li>
                         <li><Link to="/contact">Contact us</Link></li>
                         <li><Link to="/signup">Sign Up</Link></li>
+                        <li><ion-icon name="people-outline">
+                            
+                        </ion-icon>
+                        <button 
+                            onClick={() => {
+                                navigate('/profile')
+                            }}></button>
+                        </li>
                     </ul>
                 </nav>
             </header>

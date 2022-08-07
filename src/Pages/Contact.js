@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom"
+
 function Contact() {
+    const navigate = useNavigate()
     return (
         <div
             className="contactBg">
@@ -17,6 +20,14 @@ function Contact() {
                     <ion-icon name="logo-twitter"></ion-icon>
                     <ion-icon name="logo-instagram"></ion-icon>
                     <ion-icon name="logo-tiktok"></ion-icon>
+                    <a href="https://www.facebook.com/" 
+                    className="fb">fb</a>
+                    <a href="https://twitter.com/?lang=ru" 
+                    className="tw">tw</a>
+                    <a href="https://www.instagram.com/" 
+                    className="inst">in</a>
+                    <a href="https://mail.google.com/" 
+                    className="gg">gg</a>
             </div>
         </div>
     )

@@ -24,16 +24,16 @@ function Router() {
                         <Route path="/home" element={<Home />} />
                         <Route path="/pool" element={<Pool />} />
                         <Route path="/gym" element={<Gym />} />
+                        <Route path="/fitness" element={<Fitness />} />
                         <Route path="" element={<UserChek />}>
-                            <Route path="/fitness" element={<Fitness />} />
+                            <Route path="/priceList" element={<PriceList />} />
+                            <Route path="/profile" element={<Profile />} />
                         </Route>
-                        <Route path="/priceList" element={<PriceList />} />
                         <Route path="/spa" element={<Spa />} />
                         <Route path="/spaMoreInfo/:id" element={<SpaInfo />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/signup" element={<SingUp />} />
                         <Route path="/signin" element={<SignIn />} />
-                        <Route path="/profile" element={<Profile />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

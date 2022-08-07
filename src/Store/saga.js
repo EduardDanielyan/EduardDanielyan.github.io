@@ -50,8 +50,8 @@ function* profile() {
 }
 
 
-// function* logOUT({ navigate }) {
-//     let logOut = yield Axios.post("http://localhost:4000/logout")
+// function* logout({ navigate }) {
+//     let logOut = yield Axios.post("http://localhost:4000/logouT")
 //     if (logOut) {
 //         yield put(checkUser(false))
 //         console.log(logOut);
@@ -78,6 +78,6 @@ export function* rootSaga() {
     yield takeEvery('register', signup)
     yield takeEvery('log', login)
     yield takeEvery('userInfo', profile)
-    // yield takeEvery('out', logOUT)
+    // yield takeEvery('out', logout)
     yield takeEvery('checkUser',usercheck)
 }
