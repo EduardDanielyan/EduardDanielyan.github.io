@@ -19,7 +19,7 @@ function Contact() {
                     <ion-icon name="logo-facebook"></ion-icon>
                     <ion-icon name="logo-twitter"></ion-icon>
                     <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-tiktok"></ion-icon>
+                    <ion-icon name="logo-google"></ion-icon>
                     <a href="https://www.facebook.com/" 
                     className="fb">fb</a>
                     <a href="https://twitter.com/?lang=ru" 

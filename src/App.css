@@ -355,7 +355,7 @@ header button {
 	color: #e9810a;
 }
 
-.fitText button {
+/* .fitText button {
 	padding: 10px 30px;
 	margin-top: 20px;
 	background-color: #ff0000;
@@ -364,7 +364,7 @@ header button {
 .fitText button:hover {
 	background-color: #e9810a;
 	cursor: pointer;
-}
+} */
 
 .spaBg {
 	background-image: url(https://dok4pfotcdst1.cloudfront.net/crystalgolfresort.com-4150340826/cms/cache/v2/5f57e9b3debc2.jpg/1920x1080/fit/80/63253c1723ab2af4390f6ff93a0808eb.jpg);
@@ -607,37 +607,97 @@ header button {
 	color: white;
 }
 
-.profile button {
-	background-color: #000103;
-	color: white;
-	padding: 5px 10px;
-	border: none;
-	/* margin-right: 50px; */
-}
 
-.profile button:hover {
-	background-color: gray;
-	color: #000103;
-}
-
-.minimenu {
-	/* border: 2px solid red; */
-	height: 300px;
-	width: 100%;
+.butt{
+	position: relative;
+	width: 70px;
+	height: 30px;
+	font-size: 15px;
 	text-align: center;
-	/* margin-right: 50px; */
+	background-color: #2a3587;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: width .5s;
+	border-radius: .5s;
 }
 
-.minimenu ul {
-	list-style: none;
+.butt *{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	transition: opacity .25s;
 }
 
-.minimenu a {
-	text-decoration: none;
-	color: rgb(195, 241, 9);
-	margin-right: 20px;
+.icon{
+	opacity: 0;
 }
 
-.minimenu a:hover {
-	color: #000000;
+.butt:focus{
+	width: 30px;
+	background-color: #0af48f;
+	border-radius: 50%;
+}
+
+.butt:focus .text{
+	opacity: 0;
+}
+
+.butt:focus .icon {
+	opacity: 1;
+	transition-delay: .5s
+}
+
+.butt .text{
+	padding-bottom: 30px;
+}
+
+
+.butt1{
+	position: relative;
+	width: 70px;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+	background-color: #15ad3b;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: width .5s;
+	border-radius: .5s;
+	left: 5px;
+}
+
+.butt1 *{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	transition: opacity .25s;
+}
+
+.icon{
+	opacity: 0;
+}
+
+.butt1:focus{
+	width: 30px;
+	background-color: #120af4;
+	border-radius: 50%;
+}
+
+.butt1:focus .text{
+	opacity: 0;
+}
+
+.butt1:focus .icon {
+	opacity: 1;
+	transition-delay: .5s
+}
+
+.butt1 .text{
+	padding-bottom: 30px;
 }
